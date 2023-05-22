@@ -15,12 +15,23 @@ def main() -> None:
     print(attends_data.head())
     print(dict_data.head())
 
-    print(users_data.describe())
-    print(groups_data.describe())
-    print(attends_data.describe())
-    print(dict_data.describe())
+    # print(users_data.describe())
+    # print(groups_data.describe())
+    # print(attends_data.describe())
+    # print(dict_data.describe())
+
+    print(users_data.columns)
+    print(groups_data.columns)
 
     """
         TODO: Надо разобрать файлы, посмотреть на None данные и попробовать обучить LSTM или сверточную сеть, 
-        или объеденить LSTM и CNN 
+        или объединить LSTM и CNN 
+
+        Что надо:
+        - из users дата рождения, пол и место жительства
+        - из attends узнать id группы, онлайн / оффлайн (может быть что-то еще)
+        - из groups по id группы из attends узнать направление, время, дата
+
+        Для начала соединить attends, users и groups, 
+        где все колонки это features, а group_id это target :)
     """
