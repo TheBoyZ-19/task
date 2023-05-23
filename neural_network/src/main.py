@@ -6,6 +6,19 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
+"""
+    TODO: Надо разобрать файлы, посмотреть на None данные. 
+    Почитал, посмотрел лучше всего использовать DLRM (Deep Learning Recommendation Model)
+
+    Что надо:
+    - из users дата рождения, пол и место жительства
+    - из attends узнать id группы, онлайн / оффлайн (может быть что-то еще)
+    - (нужно ли оно для обучения) из groups по id группы из attends узнать направление, время, дата
+
+    Для начала соединить attends, users и groups, 
+    где все колонки это features, а group_id это target :)
+"""
+
 
 def main() -> None:
     users_data = pd.read_csv(os.path.join(os.getcwd(), "src/datasets/users.csv"))
@@ -64,17 +77,4 @@ def main() -> None:
         )
 
         Не работает, ну и не надо
-    """
-
-    """
-        TODO: Надо разобрать файлы, посмотреть на None данные. 
-        Почитал, посмотрел лучше всего использовать DLRM (Deep Learning Recommendation Model)
-
-        Что надо:
-        - из users дата рождения, пол и место жительства
-        - из attends узнать id группы, онлайн / оффлайн (может быть что-то еще)
-        - (нужно ли оно для обучения) из groups по id группы из attends узнать направление, время, дата
-
-        Для начала соединить attends, users и groups, 
-        где все колонки это features, а group_id это target :)
     """
