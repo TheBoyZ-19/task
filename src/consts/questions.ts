@@ -16,7 +16,7 @@ export const questions: QuestionType[] = [
   },
   {
     title: "Какой вид досуга Вы предпочитаете?",
-    answers: ["Активный", "Пассивный"],
+    answers: ["Активный", "Пассивный", "Интересны оба"],
     type: AnswerType.RADIO,
   },
   {
