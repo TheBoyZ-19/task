@@ -6,10 +6,13 @@ export default {
     extend: {},
   },
   plugins: [
-    plugin(function ({ addUtilities, addComponents, e, config }) {
+    plugin(function ({ addUtilities}) {
       addUtilities({
         '.custom_grid': {
           'grid-template-columns': 'repeat(2, minmax(0, max-content))'
+        },
+        '.custom_shadow': {
+          'box-shadow': '0px 2px 8px rgba(0, 0, 0, 0.15)'
         }
       })
     }),
