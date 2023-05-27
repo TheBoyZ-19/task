@@ -4,7 +4,7 @@ import ThemeCard from "./components/ThemeCard";
 import { mockRecomendationHomePageData } from "./mockdata";
 import lens from "./../../../public/g10.svg";
 import Image from "next/image";
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import Popup from "./components/Popup";
 const { Text } = Typography;
 const HomePage: NextPage = () => {
