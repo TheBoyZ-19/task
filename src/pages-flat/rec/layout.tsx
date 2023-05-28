@@ -52,7 +52,7 @@ export const RecLayout = ({ children }: { children: React.ReactNode }) => {
         style={{
           alignItems: "center",
           justifyContent: "center",
-          minHeight: "100%",
+          minHeight: "100vh",
           backgroundColor: "#F3F3F3",
         }}
       >
