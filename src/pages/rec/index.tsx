@@ -1,7 +1,7 @@
 import { type NextPage } from "next";
 import RecLayout from "./layout";
 import RecomendationCard from "./components/RecomendationCard";
-import { recomendedGroups } from "./mockdata";
+import { recomendedGroups } from "~/consts";
 
 const Recommendation: NextPage = () => {
   return (
