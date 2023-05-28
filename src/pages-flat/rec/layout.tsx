@@ -12,7 +12,7 @@ import {
 const { Search } = Input;
 import { useCallback, useState } from "react";
 import { allActivities, week, optionsDistricts } from "~/consts";
-export default function RecLayout({ children }: { children: React.ReactNode }) {
+export const RecLayout = ({ children }: { children: React.ReactNode }) => {
   const [value, setValue] = useState("");
   const [isAllShown, setIsAllShown] = useState(false);
   const [isSelected, setIsSelected] = useState(false);
@@ -202,4 +202,4 @@ export default function RecLayout({ children }: { children: React.ReactNode }) {
       </Layout>
     </ConfigProvider>
   );
-}
+};

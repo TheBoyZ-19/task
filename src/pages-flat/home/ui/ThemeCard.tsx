@@ -8,7 +8,7 @@ interface ThemeCardProps {
   };
 }
 
-const ThemeCard: React.FC<ThemeCardProps> = ({ card }) => {
+export const ThemeCard: React.FC<ThemeCardProps> = ({ card }) => {
   return (
     <div className="flex w-[252px] flex-col rounded-md bg-white pl-6 pt-7 custom_shadow">
       <Typography.Title
@@ -20,7 +20,7 @@ const ThemeCard: React.FC<ThemeCardProps> = ({ card }) => {
           lineHeight: "22px",
         }}
       >
-        {card.name}
+        {card?.name}
       </Typography.Title>
       <List
         style={{
@@ -50,4 +50,4 @@ const ThemeCard: React.FC<ThemeCardProps> = ({ card }) => {
   );
 };
 
-export default ThemeCard;
+

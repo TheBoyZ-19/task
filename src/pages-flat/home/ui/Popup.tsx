@@ -6,7 +6,7 @@ interface PopupProps {
   setIsPopupShowm: (arg: boolean) => void
 }
 
-const Popup: React.FC<PopupProps> = ({ isPopupShown, setIsPopupShowm }) => {
+export const Popup: React.FC<PopupProps> = ({ isPopupShown, setIsPopupShowm }) => {
   return (
     <div
       className={`absolute z-40 h-screen w-screen bg-black/40 ${
@@ -64,5 +64,3 @@ const Popup: React.FC<PopupProps> = ({ isPopupShown, setIsPopupShowm }) => {
     </div>
   );
 };
-
-export default Popup;
