@@ -4,8 +4,8 @@ import { type AppType } from "next/app";
 
 import { api } from "~/utils/api";
 
-import { ConfigProvider, Layout } from "antd";
 import "~/styles/globals.css";
+import withTheme from "~/theme";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -13,24 +13,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <ConfigProvider
-        theme={{
-          token: {
-            fontFamily: "Golos-Text,sans-serif",
-            colorPrimary: "#008C46",
-          },
-
-        }}
-      >
-        <Layout
-          style={{
-            backgroundColor: "#1E1E1E",
-            minHeight: "100vh",
-          }}
-        >
-          <Component {...pageProps} />
-        </Layout>
-      </ConfigProvider>
+      {withTheme(<Component {...pageProps} />)}
     </SessionProvider>
   );
 };

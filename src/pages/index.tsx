@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <Layout
         style={{
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <Link href="/survey">
