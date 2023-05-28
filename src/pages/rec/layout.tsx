@@ -11,7 +11,7 @@ import {
 } from "antd";
 const { Search } = Input;
 import { useCallback, useState } from "react";
-import { allActivities, week, optionsDistricts } from "./mockdata";
+import { allActivities, week, optionsDistricts } from "~/consts";
 export default function RecLayout({ children }: { children: React.ReactNode }) {
   const [value, setValue] = useState("");
   const [isAllShown, setIsAllShown] = useState(false);
@@ -114,7 +114,7 @@ export default function RecLayout({ children }: { children: React.ReactNode }) {
                 onChange={handleChange}
                 className="mb-7"
                 filterOption={(inputValue, option) =>
-                  option!.value
+                  option?.value
                     .toUpperCase()
                     .indexOf(inputValue.toUpperCase()) !== -1
                 }

@@ -1,8 +1,7 @@
 import { Button, ConfigProvider, Typography } from "antd";
 import React, { useState } from "react";
 import ThemeCard from "./components/ThemeCard";
-import { mockRecomendationHomePageData } from "./mockdata";
-import lens from "./../../../public/g10.svg";
+import { mockRecomendationHomePageData } from "~/consts";
 import Image from "next/image";
 import { type NextPage } from "next";
 import Popup from "./components/Popup";
@@ -68,7 +67,7 @@ const HomePage: NextPage = () => {
               </Button>
             </div>
             <Image
-              src={lens}
+              src='./../../../public/g10.svg'
               width={200}
               height={150}
               alt="lupa"

@@ -1,6 +1,6 @@
 import { Button, Layout, Typography } from "antd";
 import { EnvironmentOutlined } from "@ant-design/icons";
-import { groups } from "../mockdata";
+// import { groups } from "~/consts";
 import React from "react";
 
 interface RecomendationCardProps {
